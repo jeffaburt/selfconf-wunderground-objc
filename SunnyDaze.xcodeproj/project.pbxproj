@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8320F23F1AE6009B00832721 /* WeatherResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */; };
+		834A07A01ADCB94C0071A175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A079F1ADCB94C0071A175 /* main.m */; };
+		834A07A31ADCB94C0071A175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A21ADCB94C0071A175 /* AppDelegate.m */; };
+		834A07A61ADCB94C0071A175 /* LocationEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */; };
+		834A07A91ADCB94C0071A175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834A07A71ADCB94C0071A175 /* Main.storyboard */; };
+		834A07AB1ADCB94C0071A175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AA1ADCB94C0071A175 /* Images.xcassets */; };
+		834A07AE1ADCB94C0071A175 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */; };
+		834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */; };
+		834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07C41ADCC1E50071A175 /* WeatherService.m */; };
+		8C62C4DCCB1F383B9E52C077 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF25792CFA8A0529D52B4BE /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834A07B41ADCB94C0071A175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834A07921ADCB94C0071A175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834A07991ADCB94C0071A175;
+			remoteInfo = SunnyDaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8320F23D1AE6009B00832721 /* WeatherResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherResultsViewController.h; sourceTree = "<group>"; };
+		8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherResultsViewController.m; sourceTree = "<group>"; };
+		834A079A1ADCB94C0071A175 /* SunnyDaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyDaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834A079E1ADCB94C0071A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834A079F1ADCB94C0071A175 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		834A07A11ADCB94C0071A175 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		834A07A21ADCB94C0071A175 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		834A07A41ADCB94C0071A175 /* LocationEntryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationEntryViewController.h; sourceTree = "<group>"; };
+		834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationEntryViewController.m; sourceTree = "<group>"; };
+		834A07A81ADCB94C0071A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834A07AA1ADCB94C0071A175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		834A07AD1ADCB94C0071A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyDazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834A07B81ADCB94C0071A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyDazeTests.m; sourceTree = "<group>"; };
+		834A07C31ADCC1E50071A175 /* WeatherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
+		834A07C41ADCC1E50071A175 /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
+		ABF25792CFA8A0529D52B4BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834A07971ADCB94C0071A175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C62C4DCCB1F383B9E52C077 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07B01ADCB94C0071A175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794D09F5F7FEE90FD0165382 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */,
+				7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		834A07911ADCB94C0071A175 = {
+			isa = PBXGroup;
+			children = (
+				834A079C1ADCB94C0071A175 /* SunnyDaze */,
+				834A07B61ADCB94C0071A175 /* SunnyDazeTests */,
+				834A079B1ADCB94C0071A175 /* Products */,
+				794D09F5F7FEE90FD0165382 /* Pods */,
+				90B9845D8AE0A47185708F86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		834A079B1ADCB94C0071A175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834A079A1ADCB94C0071A175 /* SunnyDaze.app */,
+				834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834A079C1ADCB94C0071A175 /* SunnyDaze */ = {
+			isa = PBXGroup;
+			children = (
+				834A07A11ADCB94C0071A175 /* AppDelegate.h */,
+				834A07A21ADCB94C0071A175 /* AppDelegate.m */,
+				834A07A41ADCB94C0071A175 /* LocationEntryViewController.h */,
+				834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */,
+				834A07A71ADCB94C0071A175 /* Main.storyboard */,
+				834A07AA1ADCB94C0071A175 /* Images.xcassets */,
+				834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */,
+				834A079D1ADCB94C0071A175 /* Supporting Files */,
+				834A07C31ADCC1E50071A175 /* WeatherService.h */,
+				834A07C41ADCC1E50071A175 /* WeatherService.m */,
+				8320F23D1AE6009B00832721 /* WeatherResultsViewController.h */,
+				8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */,
+			);
+			path = SunnyDaze;
+			sourceTree = "<group>";
+		};
+		834A079D1ADCB94C0071A175 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834A079E1ADCB94C0071A175 /* Info.plist */,
+				834A079F1ADCB94C0071A175 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834A07B61ADCB94C0071A175 /* SunnyDazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */,
+				834A07B71ADCB94C0071A175 /* Supporting Files */,
+			);
+			path = SunnyDazeTests;
+			sourceTree = "<group>";
+		};
+		834A07B71ADCB94C0071A175 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834A07B81ADCB94C0071A175 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90B9845D8AE0A47185708F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF25792CFA8A0529D52B4BE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834A07991ADCB94C0071A175 /* SunnyDaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834A07BD1ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDaze" */;
+			buildPhases = (
+				B3208EFD61A2AFC63EB10A87 /* Check Pods Manifest.lock */,
+				834A07961ADCB94C0071A175 /* Sources */,
+				834A07971ADCB94C0071A175 /* Frameworks */,
+				834A07981ADCB94C0071A175 /* Resources */,
+				28B53BC025083B0E8C062C46 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SunnyDaze;
+			productName = SunnyDaze;
+			productReference = 834A079A1ADCB94C0071A175 /* SunnyDaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834A07B21ADCB94C0071A175 /* SunnyDazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834A07C01ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDazeTests" */;
+			buildPhases = (
+				834A07AF1ADCB94C0071A175 /* Sources */,
+				834A07B01ADCB94C0071A175 /* Frameworks */,
+				834A07B11ADCB94C0071A175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834A07B51ADCB94C0071A175 /* PBXTargetDependency */,
+			);
+			name = SunnyDazeTests;
+			productName = SunnyDazeTests;
+			productReference = 834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834A07921ADCB94C0071A175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Detroit Labs";
+				TargetAttributes = {
+					834A07991ADCB94C0071A175 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					834A07B21ADCB94C0071A175 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 834A07991ADCB94C0071A175;
+					};
+				};
+			};
+			buildConfigurationList = 834A07951ADCB94C0071A175 /* Build configuration list for PBXProject "SunnyDaze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 834A07911ADCB94C0071A175;
+			productRefGroup = 834A079B1ADCB94C0071A175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834A07991ADCB94C0071A175 /* SunnyDaze */,
+				834A07B21ADCB94C0071A175 /* SunnyDazeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834A07981ADCB94C0071A175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834A07A91ADCB94C0071A175 /* Main.storyboard in Resources */,
+				834A07AE1ADCB94C0071A175 /* LaunchScreen.xib in Resources */,
+				834A07AB1ADCB94C0071A175 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07B11ADCB94C0071A175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B53BC025083B0E8C062C46 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3208EFD61A2AFC63EB10A87 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834A07961ADCB94C0071A175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */,
+				834A07A61ADCB94C0071A175 /* LocationEntryViewController.m in Sources */,
+				834A07A31ADCB94C0071A175 /* AppDelegate.m in Sources */,
+				834A07A01ADCB94C0071A175 /* main.m in Sources */,
+				8320F23F1AE6009B00832721 /* WeatherResultsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07AF1ADCB94C0071A175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834A07B51ADCB94C0071A175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834A07991ADCB94C0071A175 /* SunnyDaze */;
+			targetProxy = 834A07B41ADCB94C0071A175 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		834A07A71ADCB94C0071A175 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834A07A81ADCB94C0071A175 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834A07AD1ADCB94C0071A175 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834A07BB1ADCB94C0071A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		834A07BC1ADCB94C0071A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834A07BE1ADCB94C0071A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SunnyDaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834A07BF1ADCB94C0071A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SunnyDaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		834A07C11ADCB94C0071A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SunnyDazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunnyDaze.app/SunnyDaze";
+			};
+			name = Debug;
+		};
+		834A07C21ADCB94C0071A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SunnyDazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunnyDaze.app/SunnyDaze";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834A07951ADCB94C0071A175 /* Build configuration list for PBXProject "SunnyDaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834A07BB1ADCB94C0071A175 /* Debug */,
+				834A07BC1ADCB94C0071A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834A07BD1ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834A07BE1ADCB94C0071A175 /* Debug */,
+				834A07BF1ADCB94C0071A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834A07C01ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834A07C11ADCB94C0071A175 /* Debug */,
+				834A07C21ADCB94C0071A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834A07921ADCB94C0071A175 /* Project object */;
+}
