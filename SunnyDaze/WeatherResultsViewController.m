@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     
     self.cityLabel.text = self.weather[@"current_observation"][@"display_location"][@"full"];
-    self.temperatureLabel.text = [NSString stringWithFormat:@"%@F", self.weather[@"current_observation"][@"temp_f"] ];
+    self.temperatureLabel.text = self.weather[@"current_observation"][@"temperature_string"];
     self.conditionsLabel.text = self.weather[@"current_observation"][@"weather"];
 }
 

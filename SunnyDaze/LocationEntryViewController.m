@@ -34,7 +34,6 @@
     self.statePicker = [UIPickerView new];
     self.statePicker.delegate = self;
     self.statePicker.dataSource = self;
-//    self.statePicker.showsSelectionIndicator = YES;
     self.searchState.inputView = self.statePicker;
 }
 
