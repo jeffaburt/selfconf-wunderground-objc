@@ -53,7 +53,7 @@
     
     NSString *city = self.searchCity.text;
     
-    [service searchByCity:city withSuccess:^(NSDictionary *weather) {
+    [service searchByCity:city andState:self.selectedState withSuccess:^(NSDictionary *weather) {
         [self performSegueWithIdentifier:@"Weather" sender:weather];
     }];
 

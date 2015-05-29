@@ -12,10 +12,19 @@
 
 @implementation WeatherService
 
-- (void)searchByCity:(NSString *)city  withSuccess:(void (^)(NSDictionary *))success {
+- (void)searchByCity:(NSString *)city andState:(NSString *)stateAbbreviation withSuccess:(void (^)(NSDictionary *))success {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://api.wunderground.com/api/YOUR_API_KEY_HERE/conditions/q/CA/San_Francisco.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    
+    NSString *cityParam = [city stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+    NSString *searchParams = [NSString stringWithFormat:@"q/%@/%@.json", stateAbbreviation, cityParam];
+    
+    // Add the weatherUndergroundAPIKey to your target's Info.plist
+    NSString *apiKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"weatherUndergroundAPIKey"];
+    
+    NSString *weatherUrlString = [NSString stringWithFormat:@"http://api.wunderground.com/api/%@/conditions/%@", apiKey, searchParams];
+    
+    [manager GET:weatherUrlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         if (success) {
             success(responseObject);
