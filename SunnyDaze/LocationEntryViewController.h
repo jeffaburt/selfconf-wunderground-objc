@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LocationEntryViewController : UIViewController
-
+@interface LocationEntryViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @end
 
