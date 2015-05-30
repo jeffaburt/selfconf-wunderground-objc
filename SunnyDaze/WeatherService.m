@@ -16,13 +16,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    NSString *cityParam = [city stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-    NSString *searchParams = [NSString stringWithFormat:@"q/%@/%@.json", stateAbbreviation, cityParam];
-    
-    // Add the weatherUndergroundAPIKey to your target's Info.plist
-    NSString *apiKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"weatherUndergroundAPIKey"];
-    
-    NSString *weatherUrlString = [NSString stringWithFormat:@"http://api.wunderground.com/api/%@/conditions/%@", apiKey, searchParams];
+    NSString *weatherUrlString = [self weatherUrlStringFromCity:city andState:stateAbbreviation];
     
     [manager GET:weatherUrlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
@@ -32,6 +26,20 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
+    
+}
+
+- (NSString *)weatherUrlStringFromCity:(NSString *)city andState:(NSString *)stateAbbreviation {
+ 
+    NSString *cityParam = [city stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+    NSString *searchParams = [NSString stringWithFormat:@"q/%@/%@.json", stateAbbreviation, cityParam];
+    
+    // Add the weatherUndergroundAPIKey to your target's Info.plist
+    NSString *apiKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"weatherUndergroundAPIKey"];
+    
+    NSString *weatherUrlString = [NSString stringWithFormat:@"http://api.wunderground.com/api/%@/conditions/%@", apiKey, searchParams];
+
+    return weatherUrlString;
     
 }
 
