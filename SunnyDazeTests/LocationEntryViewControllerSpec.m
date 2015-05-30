@@ -46,6 +46,42 @@ SPEC_BEGIN(LocationEntryViewControllerSpec)
                 
             });
             
+            context(@"when city is not in filled in", ^{
+                
+                beforeEach(^{
+                    
+                    [vc stub:@selector(selectedState) andReturn:@"MI"];
+                    [vc stub:@selector(searchCity) andReturn:[UITextField nullMock]];
+                    [vc.searchCity stub:@selector(text) andReturn:nil];
+                    
+                });
+                
+                it(@"returns NO", ^{
+                    
+                    [[theValue([vc isInputValid]) should] equal:theValue(NO)];
+                    
+                });
+                
+            });
+            
+            context(@"when state is not in filled in", ^{
+                
+                beforeEach(^{
+                    
+                    [vc stub:@selector(selectedState) andReturn:nil];
+                    [vc stub:@selector(searchCity) andReturn:[UITextField nullMock]];
+                    [vc.searchCity stub:@selector(text) andReturn:@"Detroit"];
+                    
+                });
+                
+                it(@"returns NO", ^{
+                    
+                    [[theValue([vc isInputValid]) should] equal:theValue(NO)];
+                    
+                });
+                
+            });
+            
         });
         
     });
