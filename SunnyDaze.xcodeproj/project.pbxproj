@@ -19,6 +19,7 @@
 		834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07C41ADCC1E50071A175 /* WeatherService.m */; };
 		83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */; };
 		83AB43E51B1948AA009E3E70 /* WeatherServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB43E41B1948AA009E3E70 /* WeatherServiceSpec.m */; };
+		83AB43E71B194FB2009E3E70 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 83AB43E61B194FB2009E3E70 /* weather.json */; };
 		8C62C4DCCB1F383B9E52C077 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF25792CFA8A0529D52B4BE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		834A07C41ADCC1E50071A175 /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
 		83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationEntryViewControllerSpec.m; sourceTree = "<group>"; };
 		83AB43E41B1948AA009E3E70 /* WeatherServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherServiceSpec.m; sourceTree = "<group>"; };
+		83AB43E61B194FB2009E3E70 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
 		ABF25792CFA8A0529D52B4BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				834A07B81ADCB94C0071A175 /* Info.plist */,
+				83AB43E61B194FB2009E3E70 /* weather.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AB43E71B194FB2009E3E70 /* weather.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
