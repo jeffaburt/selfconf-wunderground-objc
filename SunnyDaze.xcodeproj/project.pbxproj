@@ -22,7 +22,6 @@
 		834A07A91ADCB94C0071A175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834A07A71ADCB94C0071A175 /* Main.storyboard */; };
 		834A07AB1ADCB94C0071A175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AA1ADCB94C0071A175 /* Images.xcassets */; };
 		834A07AE1ADCB94C0071A175 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */; };
-		834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */; };
 		834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07C41ADCC1E50071A175 /* WeatherService.m */; };
 		83A6D8E01B198E470025C6BA /* WeatherByCityAcceptanceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6D8DF1B198E470025C6BA /* WeatherByCityAcceptanceSpec.m */; };
 		83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */; };
@@ -77,7 +76,6 @@
 		834A07AD1ADCB94C0071A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyDazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834A07B81ADCB94C0071A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyDazeTests.m; sourceTree = "<group>"; };
 		834A07C31ADCC1E50071A175 /* WeatherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
 		834A07C41ADCC1E50071A175 /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
 		83A6D8CC1B1964220025C6BA /* SunnyDaze-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SunnyDaze-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */,
-				834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */,
 				834A07B71ADCB94C0071A175 /* Supporting Files */,
 				83AB43E41B1948AA009E3E70 /* WeatherServiceSpec.m */,
 			);
@@ -545,7 +542,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				83AB43E51B1948AA009E3E70 /* WeatherServiceSpec.m in Sources */,
-				834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */,
 				83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
