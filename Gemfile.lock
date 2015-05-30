@@ -52,4 +52,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoapods (~> 0.37.1)
+  cocoapods (~> 0.37.2)

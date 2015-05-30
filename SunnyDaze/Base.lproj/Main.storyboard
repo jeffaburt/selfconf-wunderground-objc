@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Due-VU-RRb">
                                 <rect key="frame" x="43" y="287" width="235" height="30"/>
                                 <color key="backgroundColor" red="0.031372549020000001" green="0.29411764709999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="searchfor"/>
+                                <accessibility key="accessibilityConfiguration" label="Find Weather"/>
                                 <state key="normal" title="Find Weather">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,11 +30,13 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoU-12-MmP">
                                 <rect key="frame" x="34" y="165" width="253" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Enter City"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tmv-tZ-6cS">
                                 <rect key="frame" x="34" y="213" width="253" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Select State"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
