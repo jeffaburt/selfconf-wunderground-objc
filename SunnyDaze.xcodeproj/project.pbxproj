@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7320241FCDA2980389576E87 /* libPods-SunnyDazeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0723C33B85DBDD943D5F1255 /* libPods-SunnyDazeTests.a */; };
 		8320F23F1AE6009B00832721 /* WeatherResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */; };
 		834A07A01ADCB94C0071A175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A079F1ADCB94C0071A175 /* main.m */; };
 		834A07A31ADCB94C0071A175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A21ADCB94C0071A175 /* AppDelegate.m */; };
@@ -16,6 +17,7 @@
 		834A07AE1ADCB94C0071A175 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */; };
 		834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */; };
 		834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07C41ADCC1E50071A175 /* WeatherService.m */; };
+		83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */; };
 		8C62C4DCCB1F383B9E52C077 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF25792CFA8A0529D52B4BE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015DEDF85543930986D3C597 /* Pods-SunnyDazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyDazeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyDazeTests/Pods-SunnyDazeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0723C33B85DBDD943D5F1255 /* libPods-SunnyDazeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunnyDazeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59044E2FAF58E700A8B457E3 /* Pods-SunnyDazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyDazeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyDazeTests/Pods-SunnyDazeTests.release.xcconfig"; sourceTree = "<group>"; };
 		7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8320F23D1AE6009B00832721 /* WeatherResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherResultsViewController.h; sourceTree = "<group>"; };
 		8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherResultsViewController.m; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyDazeTests.m; sourceTree = "<group>"; };
 		834A07C31ADCC1E50071A175 /* WeatherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
 		834A07C41ADCC1E50071A175 /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
+		83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationEntryViewControllerSpec.m; sourceTree = "<group>"; };
 		ABF25792CFA8A0529D52B4BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7320241FCDA2980389576E87 /* libPods-SunnyDazeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,8 @@
 			children = (
 				F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */,
 				7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */,
+				015DEDF85543930986D3C597 /* Pods-SunnyDazeTests.debug.xcconfig */,
+				59044E2FAF58E700A8B457E3 /* Pods-SunnyDazeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 			children = (
 				834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */,
 				834A07B71ADCB94C0071A175 /* Supporting Files */,
+				83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */,
 			);
 			path = SunnyDazeTests;
 			sourceTree = "<group>";
@@ -149,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				ABF25792CFA8A0529D52B4BE /* libPods.a */,
+				0723C33B85DBDD943D5F1255 /* libPods-SunnyDazeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 834A07C01ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDazeTests" */;
 			buildPhases = (
+				1F17B2A4F63537408E4302F7 /* Check Pods Manifest.lock */,
 				834A07AF1ADCB94C0071A175 /* Sources */,
 				834A07B01ADCB94C0071A175 /* Frameworks */,
 				834A07B11ADCB94C0071A175 /* Resources */,
+				C4CA986E3A5FA85E7792F3F1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +264,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F17B2A4F63537408E4302F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		28B53BC025083B0E8C062C46 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +309,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C4CA986E3A5FA85E7792F3F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunnyDazeTests/Pods-SunnyDazeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */,
+				83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +478,7 @@
 		};
 		834A07C11ADCB94C0071A175 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015DEDF85543930986D3C597 /* Pods-SunnyDazeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -453,6 +498,7 @@
 		};
 		834A07C21ADCB94C0071A175 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59044E2FAF58E700A8B457E3 /* Pods-SunnyDazeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
