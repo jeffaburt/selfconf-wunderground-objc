@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0085e652ff6ef7e29ffe8609 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543ae17b914fc34e8e053229 /* calabash.framework */; };
+		1bc07a9cddcf125bd2fd10aa /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07C41ADCC1E50071A175 /* WeatherService.m */; };
+		1cbdcb61500c6b7a4191e25b /* WeatherResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */; };
+		2bf464d955acf6194dc58066 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14f58c3754312ed292713caa /* CFNetwork.framework */; };
+		42445085f1eb49b29fedaeab /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834A07A71ADCB94C0071A175 /* Main.storyboard */; };
+		51f3a22c11876ee6b4c0e847 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A21ADCB94C0071A175 /* AppDelegate.m */; };
+		7320241FCDA2980389576E87 /* libPods-SunnyDazeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0723C33B85DBDD943D5F1255 /* libPods-SunnyDazeTests.a */; };
+		81e6356988f1dd82399af69b /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A079F1ADCB94C0071A175 /* main.m */; };
+		8320F23F1AE6009B00832721 /* WeatherResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */; };
+		834A07A01ADCB94C0071A175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A079F1ADCB94C0071A175 /* main.m */; };
+		834A07A31ADCB94C0071A175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A21ADCB94C0071A175 /* AppDelegate.m */; };
+		834A07A61ADCB94C0071A175 /* LocationEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */; };
+		834A07A91ADCB94C0071A175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834A07A71ADCB94C0071A175 /* Main.storyboard */; };
+		834A07AB1ADCB94C0071A175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AA1ADCB94C0071A175 /* Images.xcassets */; };
+		834A07AE1ADCB94C0071A175 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */; };
+		834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */; };
+		834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07C41ADCC1E50071A175 /* WeatherService.m */; };
+		83A6D8E01B198E470025C6BA /* WeatherByCityAcceptanceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6D8DF1B198E470025C6BA /* WeatherByCityAcceptanceSpec.m */; };
+		83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */; };
+		83AB43E51B1948AA009E3E70 /* WeatherServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB43E41B1948AA009E3E70 /* WeatherServiceSpec.m */; };
+		83AB43E71B194FB2009E3E70 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 83AB43E61B194FB2009E3E70 /* weather.json */; };
+		855931089494D929E5544997 /* libPods-SunnyDaze Acceptance Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB8AC94974BD5A287999D43 /* libPods-SunnyDaze Acceptance Tests.a */; };
+		8C62C4DCCB1F383B9E52C077 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF25792CFA8A0529D52B4BE /* libPods.a */; };
+		adddd60e9fbacf879f40e1cd /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AA1ADCB94C0071A175 /* Images.xcassets */; };
+		c496fe2301575f045d39bc73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */; };
+		c6413e1bfec1301db8f68776 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF25792CFA8A0529D52B4BE /* libPods.a */; };
+		e4fe0321c6d8275ab1d00154 /* LocationEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834A07B41ADCB94C0071A175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834A07921ADCB94C0071A175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834A07991ADCB94C0071A175;
+			remoteInfo = SunnyDaze;
+		};
+		83A6D8D71B198A8B0025C6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834A07921ADCB94C0071A175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834A07991ADCB94C0071A175;
+			remoteInfo = SunnyDaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015DEDF85543930986D3C597 /* Pods-SunnyDazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyDazeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyDazeTests/Pods-SunnyDazeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0723C33B85DBDD943D5F1255 /* libPods-SunnyDazeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunnyDazeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14f58c3754312ed292713caa /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		524F5E7A67AE55E7931C1C93 /* Pods-SunnyDaze Acceptance Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyDaze Acceptance Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyDaze Acceptance Tests/Pods-SunnyDaze Acceptance Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		543ae17b914fc34e8e053229 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		59044E2FAF58E700A8B457E3 /* Pods-SunnyDazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyDazeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyDazeTests/Pods-SunnyDazeTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FB8AC94974BD5A287999D43 /* libPods-SunnyDaze Acceptance Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunnyDaze Acceptance Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1B6A96A454A83E10F89A1E /* Pods-SunnyDaze Acceptance Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyDaze Acceptance Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyDaze Acceptance Tests/Pods-SunnyDaze Acceptance Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8320F23D1AE6009B00832721 /* WeatherResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherResultsViewController.h; sourceTree = "<group>"; };
+		8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherResultsViewController.m; sourceTree = "<group>"; };
+		834A079A1ADCB94C0071A175 /* SunnyDaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyDaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834A079E1ADCB94C0071A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834A079F1ADCB94C0071A175 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		834A07A11ADCB94C0071A175 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		834A07A21ADCB94C0071A175 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		834A07A41ADCB94C0071A175 /* LocationEntryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationEntryViewController.h; sourceTree = "<group>"; };
+		834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationEntryViewController.m; sourceTree = "<group>"; };
+		834A07A81ADCB94C0071A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834A07AA1ADCB94C0071A175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		834A07AD1ADCB94C0071A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyDazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834A07B81ADCB94C0071A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyDazeTests.m; sourceTree = "<group>"; };
+		834A07C31ADCC1E50071A175 /* WeatherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
+		834A07C41ADCC1E50071A175 /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
+		83A6D8CC1B1964220025C6BA /* SunnyDaze-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SunnyDaze-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A6D8D11B198A8B0025C6BA /* SunnyDaze Acceptance Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SunnyDaze Acceptance Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A6D8D41B198A8B0025C6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A6D8DF1B198E470025C6BA /* WeatherByCityAcceptanceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherByCityAcceptanceSpec.m; sourceTree = "<group>"; };
+		83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationEntryViewControllerSpec.m; sourceTree = "<group>"; };
+		83AB43E41B1948AA009E3E70 /* WeatherServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherServiceSpec.m; sourceTree = "<group>"; };
+		83AB43E61B194FB2009E3E70 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		ABF25792CFA8A0529D52B4BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44888dccb0b2597836d37bb9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				c6413e1bfec1301db8f68776 /* libPods.a in Frameworks */,
+				2bf464d955acf6194dc58066 /* CFNetwork.framework in Frameworks */,
+				0085e652ff6ef7e29ffe8609 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07971ADCB94C0071A175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C62C4DCCB1F383B9E52C077 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07B01ADCB94C0071A175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7320241FCDA2980389576E87 /* libPods-SunnyDazeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A6D8CE1B198A8B0025C6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855931089494D929E5544997 /* libPods-SunnyDaze Acceptance Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794D09F5F7FEE90FD0165382 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */,
+				7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */,
+				015DEDF85543930986D3C597 /* Pods-SunnyDazeTests.debug.xcconfig */,
+				59044E2FAF58E700A8B457E3 /* Pods-SunnyDazeTests.release.xcconfig */,
+				524F5E7A67AE55E7931C1C93 /* Pods-SunnyDaze Acceptance Tests.debug.xcconfig */,
+				7B1B6A96A454A83E10F89A1E /* Pods-SunnyDaze Acceptance Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		834A07911ADCB94C0071A175 = {
+			isa = PBXGroup;
+			children = (
+				834A079C1ADCB94C0071A175 /* SunnyDaze */,
+				834A07B61ADCB94C0071A175 /* SunnyDazeTests */,
+				83A6D8D21B198A8B0025C6BA /* SunnyDaze Acceptance Tests */,
+				834A079B1ADCB94C0071A175 /* Products */,
+				794D09F5F7FEE90FD0165382 /* Pods */,
+				90B9845D8AE0A47185708F86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		834A079B1ADCB94C0071A175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834A079A1ADCB94C0071A175 /* SunnyDaze.app */,
+				834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */,
+				83A6D8CC1B1964220025C6BA /* SunnyDaze-cal.app */,
+				83A6D8D11B198A8B0025C6BA /* SunnyDaze Acceptance Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834A079C1ADCB94C0071A175 /* SunnyDaze */ = {
+			isa = PBXGroup;
+			children = (
+				834A07A11ADCB94C0071A175 /* AppDelegate.h */,
+				834A07A21ADCB94C0071A175 /* AppDelegate.m */,
+				834A07A41ADCB94C0071A175 /* LocationEntryViewController.h */,
+				834A07A51ADCB94C0071A175 /* LocationEntryViewController.m */,
+				834A07A71ADCB94C0071A175 /* Main.storyboard */,
+				834A07AA1ADCB94C0071A175 /* Images.xcassets */,
+				834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */,
+				834A079D1ADCB94C0071A175 /* Supporting Files */,
+				834A07C31ADCC1E50071A175 /* WeatherService.h */,
+				834A07C41ADCC1E50071A175 /* WeatherService.m */,
+				8320F23D1AE6009B00832721 /* WeatherResultsViewController.h */,
+				8320F23E1AE6009B00832721 /* WeatherResultsViewController.m */,
+			);
+			path = SunnyDaze;
+			sourceTree = "<group>";
+		};
+		834A079D1ADCB94C0071A175 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834A079E1ADCB94C0071A175 /* Info.plist */,
+				834A079F1ADCB94C0071A175 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834A07B61ADCB94C0071A175 /* SunnyDazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				83AB43E21B193835009E3E70 /* LocationEntryViewControllerSpec.m */,
+				834A07B91ADCB94C0071A175 /* SunnyDazeTests.m */,
+				834A07B71ADCB94C0071A175 /* Supporting Files */,
+				83AB43E41B1948AA009E3E70 /* WeatherServiceSpec.m */,
+			);
+			path = SunnyDazeTests;
+			sourceTree = "<group>";
+		};
+		834A07B71ADCB94C0071A175 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834A07B81ADCB94C0071A175 /* Info.plist */,
+				83AB43E61B194FB2009E3E70 /* weather.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83A6D8D21B198A8B0025C6BA /* SunnyDaze Acceptance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				83A6D8D31B198A8B0025C6BA /* Supporting Files */,
+				83A6D8DF1B198E470025C6BA /* WeatherByCityAcceptanceSpec.m */,
+			);
+			path = "SunnyDaze Acceptance Tests";
+			sourceTree = "<group>";
+		};
+		83A6D8D31B198A8B0025C6BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A6D8D41B198A8B0025C6BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90B9845D8AE0A47185708F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF25792CFA8A0529D52B4BE /* libPods.a */,
+				0723C33B85DBDD943D5F1255 /* libPods-SunnyDazeTests.a */,
+				14f58c3754312ed292713caa /* CFNetwork.framework */,
+				543ae17b914fc34e8e053229 /* calabash.framework */,
+				5FB8AC94974BD5A287999D43 /* libPods-SunnyDaze Acceptance Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2c5f24b8ec68a8561fcb2428 /* SunnyDaze-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883b24ac82fc937707ae9c51 /* Build configuration list for PBXNativeTarget "SunnyDaze-cal" */;
+			buildPhases = (
+				fbd0128cf12f6b1aad960ed2 /* Check Pods Manifest.lock */,
+				ff314d25566086f365c92d4d /* Sources */,
+				44888dccb0b2597836d37bb9 /* Frameworks */,
+				1c9a6f75d70392c3e6e88d96 /* Resources */,
+				c8da7c6fe5c0e9781aed9c41 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SunnyDaze-cal";
+			productName = "SunnyDaze-cal";
+			productReference = 83A6D8CC1B1964220025C6BA /* SunnyDaze-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834A07991ADCB94C0071A175 /* SunnyDaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834A07BD1ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDaze" */;
+			buildPhases = (
+				B3208EFD61A2AFC63EB10A87 /* Check Pods Manifest.lock */,
+				834A07961ADCB94C0071A175 /* Sources */,
+				834A07971ADCB94C0071A175 /* Frameworks */,
+				834A07981ADCB94C0071A175 /* Resources */,
+				28B53BC025083B0E8C062C46 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SunnyDaze;
+			productName = SunnyDaze;
+			productReference = 834A079A1ADCB94C0071A175 /* SunnyDaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834A07B21ADCB94C0071A175 /* SunnyDazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834A07C01ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDazeTests" */;
+			buildPhases = (
+				1F17B2A4F63537408E4302F7 /* Check Pods Manifest.lock */,
+				834A07AF1ADCB94C0071A175 /* Sources */,
+				834A07B01ADCB94C0071A175 /* Frameworks */,
+				834A07B11ADCB94C0071A175 /* Resources */,
+				C4CA986E3A5FA85E7792F3F1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834A07B51ADCB94C0071A175 /* PBXTargetDependency */,
+			);
+			name = SunnyDazeTests;
+			productName = SunnyDazeTests;
+			productReference = 834A07B31ADCB94C0071A175 /* SunnyDazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83A6D8D01B198A8B0025C6BA /* SunnyDaze Acceptance Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A6D8DB1B198A8B0025C6BA /* Build configuration list for PBXNativeTarget "SunnyDaze Acceptance Tests" */;
+			buildPhases = (
+				7288F7323D453C6F11FE21F9 /* Check Pods Manifest.lock */,
+				83A6D8CD1B198A8B0025C6BA /* Sources */,
+				83A6D8CE1B198A8B0025C6BA /* Frameworks */,
+				83A6D8CF1B198A8B0025C6BA /* Resources */,
+				0BD59F5BF17BCE79CAFA5247 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A6D8D81B198A8B0025C6BA /* PBXTargetDependency */,
+			);
+			name = "SunnyDaze Acceptance Tests";
+			productName = "SunnyDaze Acceptance Tests";
+			productReference = 83A6D8D11B198A8B0025C6BA /* SunnyDaze Acceptance Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834A07921ADCB94C0071A175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Detroit Labs";
+				TargetAttributes = {
+					834A07991ADCB94C0071A175 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					834A07B21ADCB94C0071A175 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 834A07991ADCB94C0071A175;
+					};
+					83A6D8D01B198A8B0025C6BA = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 834A07991ADCB94C0071A175;
+					};
+				};
+			};
+			buildConfigurationList = 834A07951ADCB94C0071A175 /* Build configuration list for PBXProject "SunnyDaze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 834A07911ADCB94C0071A175;
+			productRefGroup = 834A079B1ADCB94C0071A175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834A07991ADCB94C0071A175 /* SunnyDaze */,
+				834A07B21ADCB94C0071A175 /* SunnyDazeTests */,
+				2c5f24b8ec68a8561fcb2428 /* SunnyDaze-cal */,
+				83A6D8D01B198A8B0025C6BA /* SunnyDaze Acceptance Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1c9a6f75d70392c3e6e88d96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42445085f1eb49b29fedaeab /* Main.storyboard in Resources */,
+				c496fe2301575f045d39bc73 /* LaunchScreen.xib in Resources */,
+				adddd60e9fbacf879f40e1cd /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07981ADCB94C0071A175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834A07A91ADCB94C0071A175 /* Main.storyboard in Resources */,
+				834A07AE1ADCB94C0071A175 /* LaunchScreen.xib in Resources */,
+				834A07AB1ADCB94C0071A175 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07B11ADCB94C0071A175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AB43E71B194FB2009E3E70 /* weather.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A6D8CF1B198A8B0025C6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD59F5BF17BCE79CAFA5247 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunnyDaze Acceptance Tests/Pods-SunnyDaze Acceptance Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F17B2A4F63537408E4302F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28B53BC025083B0E8C062C46 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7288F7323D453C6F11FE21F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3208EFD61A2AFC63EB10A87 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CA986E3A5FA85E7792F3F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunnyDazeTests/Pods-SunnyDazeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		c8da7c6fe5c0e9781aed9c41 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		fbd0128cf12f6b1aad960ed2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834A07961ADCB94C0071A175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834A07C51ADCC1E50071A175 /* WeatherService.m in Sources */,
+				834A07A61ADCB94C0071A175 /* LocationEntryViewController.m in Sources */,
+				834A07A31ADCB94C0071A175 /* AppDelegate.m in Sources */,
+				834A07A01ADCB94C0071A175 /* main.m in Sources */,
+				8320F23F1AE6009B00832721 /* WeatherResultsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834A07AF1ADCB94C0071A175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AB43E51B1948AA009E3E70 /* WeatherServiceSpec.m in Sources */,
+				834A07BA1ADCB94C0071A175 /* SunnyDazeTests.m in Sources */,
+				83AB43E31B193835009E3E70 /* LocationEntryViewControllerSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A6D8CD1B198A8B0025C6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6D8E01B198E470025C6BA /* WeatherByCityAcceptanceSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ff314d25566086f365c92d4d /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1bc07a9cddcf125bd2fd10aa /* WeatherService.m in Sources */,
+				e4fe0321c6d8275ab1d00154 /* LocationEntryViewController.m in Sources */,
+				51f3a22c11876ee6b4c0e847 /* AppDelegate.m in Sources */,
+				81e6356988f1dd82399af69b /* main.m in Sources */,
+				1cbdcb61500c6b7a4191e25b /* WeatherResultsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834A07B51ADCB94C0071A175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834A07991ADCB94C0071A175 /* SunnyDaze */;
+			targetProxy = 834A07B41ADCB94C0071A175 /* PBXContainerItemProxy */;
+		};
+		83A6D8D81B198A8B0025C6BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834A07991ADCB94C0071A175 /* SunnyDaze */;
+			targetProxy = 83A6D8D71B198A8B0025C6BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		834A07A71ADCB94C0071A175 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834A07A81ADCB94C0071A175 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834A07AC1ADCB94C0071A175 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834A07AD1ADCB94C0071A175 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1422a9ffdbf0b70cd771f887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				INFOPLIST_FILE = SunnyDaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834A07BB1ADCB94C0071A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		834A07BC1ADCB94C0071A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834A07BE1ADCB94C0071A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F230882128AF72C488CBAD81 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SunnyDaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834A07BF1ADCB94C0071A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SunnyDaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		834A07C11ADCB94C0071A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015DEDF85543930986D3C597 /* Pods-SunnyDazeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SunnyDazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunnyDaze.app/SunnyDaze";
+			};
+			name = Debug;
+		};
+		834A07C21ADCB94C0071A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59044E2FAF58E700A8B457E3 /* Pods-SunnyDazeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SunnyDazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunnyDaze.app/SunnyDaze";
+			};
+			name = Release;
+		};
+		83A6D8D91B198A8B0025C6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524F5E7A67AE55E7931C1C93 /* Pods-SunnyDaze Acceptance Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SunnyDaze Acceptance Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunnyDaze.app/SunnyDaze";
+			};
+			name = Debug;
+		};
+		83A6D8DA1B198A8B0025C6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1B6A96A454A83E10F89A1E /* Pods-SunnyDaze Acceptance Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SunnyDaze Acceptance Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunnyDaze.app/SunnyDaze";
+			};
+			name = Release;
+		};
+		fd78e96e4329785e95bdf6ee /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFFA2EA48880D4A54BDFDFF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				INFOPLIST_FILE = SunnyDaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834A07951ADCB94C0071A175 /* Build configuration list for PBXProject "SunnyDaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834A07BB1ADCB94C0071A175 /* Debug */,
+				834A07BC1ADCB94C0071A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834A07BD1ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834A07BE1ADCB94C0071A175 /* Debug */,
+				834A07BF1ADCB94C0071A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834A07C01ADCB94C0071A175 /* Build configuration list for PBXNativeTarget "SunnyDazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834A07C11ADCB94C0071A175 /* Debug */,
+				834A07C21ADCB94C0071A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A6D8DB1B198A8B0025C6BA /* Build configuration list for PBXNativeTarget "SunnyDaze Acceptance Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A6D8D91B198A8B0025C6BA /* Debug */,
+				83A6D8DA1B198A8B0025C6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883b24ac82fc937707ae9c51 /* Build configuration list for PBXNativeTarget "SunnyDaze-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1422a9ffdbf0b70cd771f887 /* Debug */,
+				fd78e96e4329785e95bdf6ee /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834A07921ADCB94C0071A175 /* Project object */;
+}
