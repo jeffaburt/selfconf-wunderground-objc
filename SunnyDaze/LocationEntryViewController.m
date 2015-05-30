@@ -50,12 +50,22 @@
     
     WeatherService *service = [WeatherService new];
     
-    NSString *city = self.searchCity.text;
-    
-    [service searchByCity:city andState:self.selectedState withSuccess:^(NSDictionary *weather) {
-        [self performSegueWithIdentifier:@"Weather" sender:weather];
-    }];
+    if ([self isInputValid]) {
+        
+        [service searchByCity:self.searchCity.text andState:self.selectedState withSuccess:^(NSDictionary *weather) {
+            [self performSegueWithIdentifier:@"Weather" sender:weather];
+        }];
 
+    }
+    
+
+}
+
+- (BOOL)isInputValid {
+    BOOL isCityValid = self.searchCity.text != nil && [self.searchCity.text length] > 0;
+    BOOL isStateValid = self.selectedState != nil;
+    
+    return isCityValid && isStateValid;
 }
 
 #pragma mark -- UIPickerView Delegate Methods
