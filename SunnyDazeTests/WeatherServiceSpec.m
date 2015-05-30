@@ -70,10 +70,10 @@ SPEC_BEGIN(WeatherServiceSpec)
                 NSString *stateAbbreviation = @"CA";
                 
                 [weatherService searchByCity:city andState:stateAbbreviation withSuccess:^(NSDictionary *weather) {
-                
+                    
                     weatherResponse = weather;
                     
-                }];
+                } andFailure:nil];
                 
                 [[expectFutureValue(weatherResponse[@"current_observation"][@"display_location"][@"full"]) shouldEventually] equal:@"San Francisco, CA"];
                 
@@ -81,6 +81,46 @@ SPEC_BEGIN(WeatherServiceSpec)
             
             afterAll(^{
                
+                [OHHTTPStubs removeAllStubs];
+                
+            });
+            
+        });
+        
+        context(@"when API call fails", ^{
+            
+            beforeAll(^{
+                
+                [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
+                    
+                    return [request.URL.absoluteString isEqualToString:@"http://api.wunderground.com/api/12345/conditions/q/CA/San_Francisco.json"];
+                    
+                } withStubResponse:^OHHTTPStubsResponse*(NSURLRequest *request) {
+                    
+                    NSError* notConnectedError = [NSError errorWithDomain:NSURLErrorDomain code:kCFURLErrorNotConnectedToInternet userInfo:nil];
+                    return [OHHTTPStubsResponse responseWithError:notConnectedError];
+                    
+                }];
+                
+            });
+            
+            it(@"calls the success block with weather dictionary", ^{
+                
+                __block NSError *errorResponse;
+                
+                NSString *city = @"San Francisco";
+                NSString *stateAbbreviation = @"CA";
+                
+                [weatherService searchByCity:city andState:stateAbbreviation withSuccess:nil andFailure:^(NSError *error) {
+                    errorResponse = error;
+                }];
+                
+                [[expectFutureValue(errorResponse) shouldNotEventually] beNil];
+                
+            });
+            
+            afterAll(^{
+                
                 [OHHTTPStubs removeAllStubs];
                 
             });

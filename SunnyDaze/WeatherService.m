@@ -12,19 +12,24 @@
 
 @implementation WeatherService
 
-- (void)searchByCity:(NSString *)city andState:(NSString *)stateAbbreviation withSuccess:(void (^)(NSDictionary *))success {
+- (void)searchByCity:(NSString *)city andState:(NSString *)stateAbbreviation withSuccess:(void (^)(NSDictionary *))successBlock andFailure:(void (^)(NSError *))errorBlock {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     NSString *weatherUrlString = [self weatherUrlStringFromCity:city andState:stateAbbreviation];
     
     [manager GET:weatherUrlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-        if (success) {
-            success(responseObject);
+
+        if (successBlock) {
+            successBlock(responseObject);
         }
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+        
+        if (errorBlock) {
+            errorBlock(error);
+        }
+        
     }];
     
 }

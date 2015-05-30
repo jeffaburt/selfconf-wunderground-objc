@@ -54,6 +54,8 @@
         
         [service searchByCity:self.searchCity.text andState:self.selectedState withSuccess:^(NSDictionary *weather) {
             [self performSegueWithIdentifier:@"Weather" sender:weather];
+        } andFailure:^(NSError *error) {
+            NSLog(@"Error!");
         }];
 
     }

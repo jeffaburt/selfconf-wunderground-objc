@@ -10,6 +10,6 @@
 
 @interface WeatherService : NSObject
 
-- (void)searchByCity:(NSString *)city andState:(NSString *)stateAbbreviation withSuccess:(void (^)(NSDictionary *))success;
+- (void)searchByCity:(NSString *)city andState:(NSString *)stateAbbreviation withSuccess:(void (^)(NSDictionary *))successBlock andFailure:(void (^)(NSError *))errorBlock;
 
 @end
