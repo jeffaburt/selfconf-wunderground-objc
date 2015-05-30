@@ -18,3 +18,9 @@ DerivedData
 *.xcuserstate
 *.xcworkspacedata
 Pods/
+*.bak
+*.swp
+
+# calabash
+screenshot_*.png
+.irb-history
