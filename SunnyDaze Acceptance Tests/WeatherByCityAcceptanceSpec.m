@@ -38,6 +38,18 @@ SPEC_BEGIN(WeatherByCityAcceptanceSpec)
                 
             });
             
+            context(@"when 'select state' is chosen from picker", ^{
+                
+                it(@"clears the state textfield", ^{
+                    
+                    [tester selectPickerViewRowWithTitle:@"Select State"];
+                    
+                    [tester waitForViewWithAccessibilityLabel:@"Select State" value:@"" traits:UIAccessibilityTraitNone];
+                    
+                });
+                
+            });
+            
         });
         
         describe(@"Location Search", ^{
