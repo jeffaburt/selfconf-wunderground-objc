@@ -4,9 +4,15 @@ Weather Underground Sample App in Obj-C for self.conf
 Prerequisites
 -------------
 
-To build the app, you’ll need Xcode 6.x or later. You’ll also need to install [CocoaPods](http://www.cocoapods.org) to manage library dependencies.
+To build the app, you’ll need Xcode 6.2.x (NOTE: Functional tests may not work with Xcode 6.3.x). 
+
+For library dependencies, you’ll need to install [CocoaPods](http://www.cocoapods.org).
 
 To run functional tests via calabash, you'll need to install the [calabash gem](http://calaba.sh/).
+
+To make API calls to Weather Underground, you'll need an [API Key](http://www.wunderground.com/weather/api/).
+Once you have a key, edit the Info.plist file in the SunnyDaze target to add a key named "weatherUndergroundAPIKey".
+Add your Weather Underground API key as the string value.
 
 Getting Started
 ---------------
